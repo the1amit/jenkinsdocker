@@ -1,0 +1,17 @@
+---
+- hosts: webservers
+  become: True
+  tasks:
+    - name: start docker
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Start the container
+      docker_container:
+        name: webapp start
+        image: "webapp:{{BUILD_ID}}"
+        state: started
+        published_ports:
+          - 8009:8080

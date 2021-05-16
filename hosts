@@ -1,0 +1,7 @@
+[webservers]
+vmpl1000.eastus.cloudapp.azure.com
+
+[webservers:vars]
+ansible_ssh_user=linuxadmin
+ansible_ssh_pass=linux@12345
+ansible_ssh_port=22
