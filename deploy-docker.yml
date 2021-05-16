@@ -11,7 +11,7 @@
     - name: Start the container
       docker_container:
         name: webapp start
-        image: "webapp:{{BUILD_ID}}"
+        image: "webapp:latest"
         state: started
         published_ports:
           - 8009:8080
