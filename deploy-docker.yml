@@ -14,5 +14,4 @@
         image: "the1amit/webapp"
         state: started
         ports:
-          - "2500:8500"
-          - "http://vmpl1000.eastus.cloudapp.azure.com:2501:8501"
+          - "http://vmpl1000.eastus.cloudapp.azure.com:6500:8080"
