@@ -10,7 +10,7 @@
 
     - name: Start the container
       docker_container:
-        name: webapp start
+        name: webapp
         image: "the1amit/webapp"
         state: started
         published_ports:
