@@ -11,7 +11,7 @@
     - name: Start the container
       docker_container:
         name: webapp start
-        image: "the1amit/webapp:latest"
+        image: "the1amit/webapp"
         state: started
         published_ports:
           - 8009:8080
