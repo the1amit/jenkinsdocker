@@ -13,5 +13,3 @@
         name: webapp
         image: "the1amit/webapp"
         state: started
-        published_ports:
-          - 8009:8080
