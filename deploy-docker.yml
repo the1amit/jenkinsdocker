@@ -13,7 +13,7 @@
         name: webapp
         image: "the1amit/webapp"
         state: started
-        ports:
-          - "http://vmpl1000.eastus.cloudapp.azure.com:8085:8080"
+        published_ports:
+          - "8085:8080"
         expose:
           - "8085"
